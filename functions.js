@@ -140,17 +140,17 @@ function countB(string){
     return countChar(string,"B");
 }
 
-function countChar(string, char){
-    let result = 0 
-    for(var i =0; i < string.length; i++){
-        if(string[i] == char){
-            result += 1
-        }
-    }
-   return result
-}
+// function countChar(string, char){
+//     let result = 0 
+//     for(var i =0; i < string.length; i++){
+//         if(string[i] == char){
+//             result += 1
+//         }
+//     }
+//    return result
+// }
 
-console.log(countB("BlaBlaBla"))
-console.log(countChar("BlaBlaBla","B"))
-console.log(countB("BBC"));
-console.log(countChar("kakkerlak", "k"));
+// console.log(countB("BlaBlaBla"))
+// console.log(countChar("BlaBlaBla","B"))
+// console.log(countB("BBC"));
+// console.log(countChar("kakkerlak", "k"));
