@@ -50,4 +50,42 @@
 // let words = ["never fully"];
 // console.log(["will", ...words, "understand"])
 
-console.log(Math.random())
+// console.log(Math.random())
+
+// let string = JSON.stringify({"squirel" : false, "events" :["weekend","day","night"]})
+// console.log(string.length)
+// console.log(JSON.parse(string).events)
+
+
+// Exercises
+// sum of range 
+// function sum(start,end){
+//     result = 0
+//     for(i = start;i <= end; i++){
+//         result += i
+//     }
+//     return result;
+// }
+
+// console.log(sum(1,10))
+
+// function sumOfArray(arr){
+//     sum = 0;
+//     for(i= 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     return sum
+// }
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// console.log(sumOfArray(arr))
+
+function stepInArr(start,end,step){
+    arr =[];
+    for(i = start; i <= end; i++){
+        if(i % step !== 0){
+            arr.push(i);
+        }
+    }
+    return arr
+}
+console.log(stepInArr(1,10,3))
