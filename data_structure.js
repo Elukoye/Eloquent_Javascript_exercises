@@ -79,13 +79,38 @@
 // arr = [1,2,3,4,5,6,7,8,9,10]
 // console.log(sumOfArray(arr))
 
-function stepInArr(start,end,step){
-    arr =[];
-    for(i = start; i <= end; i++){
-        if(i % step !== 0){
-            arr.push(i);
-        }
+// function stepInArr(start,end,step){
+//     result =[];
+//    if (step < 0){
+//         for(i = start; i >= end; i+= step){
+//             result.push(i);
+//         } 
+//    }
+//    else{
+//         for(i = start; i <= end; i += step){
+//             result.push(i)
+//         }
+//    }
+//    return result;
+// }
+// console.log(stepInArr(1,10,2))
+// console.log(stepInArr(5,2,-1))
+
+function reverseArr(arr){
+    result =[]
+    for(i = arr.length - 1; i >= 0; i-- ){
+        result.push(arr[i])
     }
-    return arr
+    return result
 }
-console.log(stepInArr(1,10,3))
+
+function reverseArrayInPlace(arr2) {
+    var half = Math.floor(arr2.length / 2);
+    for (var i = 0; i < half; i++) {
+      var temp = arr2[arr2.length - 1 - i];
+      arr2[arr2.length - 1 - i] = arr2[i];
+      arr2[i] = temp;
+    }
+    return arr2;
+  }
+console.log(reverseArrayInPlace([1,2,3,4,5]))
