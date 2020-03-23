@@ -96,21 +96,41 @@
 // console.log(stepInArr(1,10,2))
 // console.log(stepInArr(5,2,-1))
 
-function reverseArr(arr){
-    result =[]
-    for(i = arr.length - 1; i >= 0; i-- ){
-        result.push(arr[i])
-    }
-    return result
-}
+// function reverseArr(arr){
+//     result =[]
+//     for(i = arr.length - 1; i >= 0; i-- ){
+//         result.push(arr[i])
+//     }
+//     return result
+// }
 
-function reverseArrayInPlace(arr2) {
-    var half = Math.floor(arr2.length / 2);
-    for (var i = 0; i < half; i++) {
-      var temp = arr2[arr2.length - 1 - i];
-      arr2[arr2.length - 1 - i] = arr2[i];
-      arr2[i] = temp;
-    }
-    return arr2;
-  }
-console.log(reverseArrayInPlace([1,2,3,4,5]))
+// function reverseArrayInPlace(arr2) {
+//     var half = Math.floor(arr2.length / 2);
+//     for (var i = 0; i < half; i++) {
+//       var temp = arr2[arr2.length - 1 - i];
+//       arr2[arr2.length - 1 - i] = arr2[i];
+//       arr2[i] = temp;
+//     }
+//     return arr2;
+//   }
+// console.log(reverseArrayInPlace([1,2,3,4,5]))
+
+
+// function arrayToList(arr){
+//   var list = null;
+//   for(var i = 0; i < arr.length - 1; i++){
+//       list = {value: arr[i], rest:list};
+//   } 
+//   return list;  
+// }
+// arr =[1,2,3]
+// console.log(arrayToList(arr))
+
+function listToArray(list) {
+  var array = [];
+  for (var node = list; node; node = node.rest)
+    array.push(node.value);
+   return array;
+ }
+list =[1,2,3]
+console.log(listToArray(list))
