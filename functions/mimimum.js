@@ -1,5 +1,5 @@
 //exercises 
-// min
+// 1. minimum
 // const min = (a,b) =>{
 //     return Math.min(a,b);
 // };
@@ -15,3 +15,6 @@ let min = (a,b)=>{
 
 console.log(min(0,10));
 console.log(min(0,-10)); 
+
+
+	
