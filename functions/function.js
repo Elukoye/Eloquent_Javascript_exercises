@@ -1,15 +1,17 @@
-const makeNoise = function (){
-    console.log("Ping!")
-};
-makeNoise();
+//exercises 
+// min
+// const min = (a,b) =>{
+//     return Math.min(a,b);
+// };
 
-const power = function(base, expo){
-    let result = 1;
-    for(count = 0; count < expo; count ++){
-        result *= base;
-    }
-    return result;
-};
+//refactored code 
+let min = (a,b)=>{
+     if(a > b){
+		 return b;
+	 }else{
+		 return a;
+	 }
+}
 
-console.log(power(2, 5));
-console.log(result);
+console.log(min(0,10));
+console.log(min(0,-10)); 
